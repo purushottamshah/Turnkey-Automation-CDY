@@ -49,26 +49,24 @@ Automate your interactions with Turnkey Wallet using this Python bot.
 
 ---
 
-## ⚙️ Configuration
+## 📝 Configuration
 
-### 🔑 accounts.txt
+* `accounts.txt` — Add one private key per line:
 
-Put your private keys here, one per line:
+  ```text
+  your_private_key_1
+  your_private_key_2
+  ```
 
-```
-0xYourPrivateKey1
-0xYourPrivateKey2
-```
+* `proxy.txt` — Add proxies like this:
 
-### 🌐 proxy.txt
+  ```text
+  ip:port
+  http://ip:port
+  http://user:pass@ip:port
+  ```
 
-Supported formats:
-
-```
-ip:port
-http://ip:port
-http://user:pass@ip:port
-```
+---
 
 > ⚠️ Proxy type will be chosen inside the script when you run the bot.
 
