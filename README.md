@@ -79,6 +79,11 @@ http://user:pass@ip:port
 ```bash
 python bot.py
 ```
+OR
+
+```bash
+python3 bot.py
+```
 
 Choose the desired proxy option (1, 2, or 3) when prompted.
 
