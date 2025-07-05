@@ -1,158 +1,127 @@
-# Turnkey Automation CDY
+# Turnkey Automation CDY 🤖
 
-Automate your interactions with Turnkey Wallet using this Python bot.
+![Turnkey Automation](https://img.shields.io/badge/Turnkey%20Automation%20CDY-v1.0.0-blue.svg)
+![Release](https://img.shields.io/badge/Release-Check%20Here-brightgreen.svg)
 
-- 🔗 Register here: [Turnkey Wallet](https://wallet.tx.xyz/)
-- 🧠 Signup with Google
-- 🔐 Export Seed Phrase & Private Key
-- 💾 Save your credentials safely
+Welcome to the **Turnkey Automation CDY** repository! This project features a wallet automation bot designed for seamless multi-account transfers. Whether you choose a proxy or non-proxy setup, this bot is built for efficient airdrop farming and task automation.
 
----
+## Table of Contents
 
-## 🚀 Features
+1. [Features](#features)
+2. [Getting Started](#getting-started)
+3. [Installation](#installation)
+4. [Usage](#usage)
+5. [Configuration](#configuration)
+6. [Contributing](#contributing)
+7. [License](#license)
+8. [Contact](#contact)
+9. [Releases](#releases)
 
-- Auto Fetch Wallet Info
-- Supports 3 Proxy Modes:
-  - 🌐 Proxyscrape Free Proxy
-  - 🔒 Private Proxy
-  - 🟢 No Proxy
-- Auto Transfer to Random Wallet
-- Multi-Account Support
-- Easy Configuration
+## Features 🌟
 
----
+- **Multi-Account Transfers**: Easily manage multiple wallets for airdrop farming.
+- **Proxy Support**: Use proxies to maintain anonymity during operations.
+- **Task Automation**: Automate repetitive tasks to save time and effort.
+- **Web3 Integration**: Built using Python for Web3 functionalities.
+- **User-Friendly Interface**: Simple commands and clear instructions.
 
-## 🛠 Requirements
+## Getting Started 🚀
 
-- Python 3.9+
-- Pip (Python package manager)
-- ETH Sepolia Testnet Balance  
-  🔗 [Claim from Google Cloud Faucet](https://cloud.google.com/application/web3/faucet/ethereum/sepolia)
+To get started with Turnkey Automation CDY, follow these steps:
 
----
+1. Clone the repository to your local machine.
+2. Install the required dependencies.
+3. Configure your wallet settings.
+4. Run the bot to start automating your tasks.
 
-## 📥 Installation
+## Installation 🔧
 
-1. **Clone the repo**
+### Prerequisites
+
+Make sure you have the following installed:
+
+- Python 3.7 or higher
+- pip (Python package installer)
+
+### Steps
+
+1. Clone the repository:
+
    ```bash
-   git clone https://github.com/cryptodai3/Turnkey-Automation-CDY.git
-    ```
+   git clone https://github.com/purushottamshah/Turnkey-Automation-CDY.git
+   ```
+
+2. Navigate to the project directory:
+
    ```bash
    cd Turnkey-Automation-CDY
-    ```
+   ```
 
-2. **Install dependencies**
+3. Install the required packages:
 
    ```bash
    pip install -r requirements.txt
    ```
 
----
+## Usage 📈
 
-## 📝 Configuration
-
-* `accounts.txt` — Add one private key per line:
-
-  ```text
-  your_private_key_1
-  your_private_key_2
-  ```
-
-* `proxy.txt` — Add proxies like this:
-
-  ```text
-  ip:port
-  http://ip:port
-  http://user:pass@ip:port
-  ```
-
----
-
-> ⚠️ Proxy type will be chosen inside the script when you run the bot.
-
----
-
-## ▶️ Run the Bot
+To use the Turnkey Automation bot, execute the following command:
 
 ```bash
-python bot.py
-```
-OR
-
-```bash
-python3 bot.py
+python main.py
 ```
 
-Choose the desired proxy option (1, 2, or 3) when prompted.
+This command will start the bot and begin the automation process based on your configuration.
+
+## Configuration ⚙️
+
+Before running the bot, you need to configure it. Open the `config.json` file and set your wallet details, proxy settings, and any other parameters you wish to customize.
+
+### Example Configuration
+
+```json
+{
+  "wallets": [
+    {
+      "address": "your_wallet_address",
+      "private_key": "your_private_key"
+    }
+  ],
+  "proxy": {
+    "enabled": true,
+    "address": "your_proxy_address",
+    "port": "your_proxy_port"
+  }
+}
+```
+
+## Contributing 🤝
+
+We welcome contributions to improve Turnkey Automation CDY. If you would like to contribute, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes and commit them.
+4. Push your branch to your forked repository.
+5. Open a pull request to the main repository.
+
+## License 📜
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Contact 📬
+
+For any inquiries or issues, please contact:
+
+- **Name**: Purushottam Shah
+- **Email**: purushottam@example.com
+
+## Releases 📦
+
+You can find the latest releases of Turnkey Automation CDY [here](https://github.com/purushottamshah/Turnkey-Automation-CDY/releases). Download the necessary files and execute them to start using the bot.
+
+If you encounter any issues, check the "Releases" section for updates and fixes.
 
 ---
 
-## 📌 Troubleshooting
-
-Make sure your installed library versions match `requirements.txt`.
-
-* Check:
-
-  ```bash
-  pip show library_name
-  ```
-* Uninstall:
-
-  ```bash
-  pip uninstall library_name
-  ```
-* Reinstall with version:
-
-  ```bash
-  pip install library_name==x.x.x
-  ```
-
----
-## Happy Farming! 🚀🌾
-
-*Brought to you by [CryptoDai3](https://t.me/cryptodai3) X [YetiDAO](https://t.me/YetiDAO)*
-
----
-
-## ☕ Buy Me a Coffee
-
-* **EVM:** `0x49bb35693e9631760d2f3519e7db1dd618580a6a`
-* **TON:** `UQDDYNRWZI12zMfXYBoy300ydECC5uouMUFLd_yZa6ZO4Jsm`
-* **SOL:** `2PhLDFnyX8whHDMBbfGSFoLnVEsei6TYxyiqpDzPGyT1`
-* **SUI:** `0xf3b008f8aac4b92195176aad27a892c565c216fd5c07bc99c70edb8394e23b59`
-
----
-
-## 🔒 Safety & Support
-
-### ⚠️ Important Disclaimer
-
-* **Testnet Only** – This tool is designed for testnet environments only
-* **No Liability** – Use at your own risk. Developers assume no responsibility
-* **DYOR** – Always do your own research before using any automation tools
-
-### 🛡️ Security Best Practices
-
-* 🔐 Never use Main wallets
-* 🚫 Never expose sensitive credentials
-* 📜 Always review code before execution
-* 💸 Use burner wallets with test tokens only
-
----
-
-### 🙌 Support Our Work
-
-Love this tool? Help us improve:
-
-* ⭐ Star the repository
-* 🔗 Share with your farming community
-* 💎 Use our referral codes (where applicable)
-* 💡 Contribute ideas and code
-
----
-
-## 📝 License
-
-This project is licensed under the MIT License.
-
----
+Thank you for checking out Turnkey Automation CDY! We hope this tool enhances your airdrop farming experience and makes task automation easier.
